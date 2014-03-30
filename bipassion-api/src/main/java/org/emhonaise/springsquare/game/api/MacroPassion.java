@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.api;
+package org.emhonaise.springsquare.game.api;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

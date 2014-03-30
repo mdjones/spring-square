@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.api;
+package org.emhonaise.springsquare.game.api;
 
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class TestPassion {
                 .posSegments(10).negSegments(3);
 
         builder.addPassionBuilder(sciencePassion).addPassionBuilder(musicPassion).addPassionBuilder(gamesPassion);
-        Character character = new Character(builder.build(), new TestThresholdStrategy());
+        org.emhonaise.springsquare.game.api.Character character = new Character(builder.build(), new TestThresholdStrategy());
 
         character.applyAction("ZZZZ", true);
         character.applyAction("YYYY", true);

@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.twitter;
+package org.emhonaise.springsquare.twitter;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

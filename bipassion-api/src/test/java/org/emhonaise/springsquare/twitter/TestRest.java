@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.twitter;
+package org.emhonaise.springsquare.twitter;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

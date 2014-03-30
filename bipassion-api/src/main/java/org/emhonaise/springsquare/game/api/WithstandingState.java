@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.api;
+package org.emhonaise.springsquare.game.api;
 
 /**
  *

@@ -1,4 +1,4 @@
-package org.emhonaise.bipassion.api;
+package org.emhonaise.springsquare.game.api;
 
 import org.apache.log4j.Logger;
 
@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 public class TestThresholdStrategy implements ThresholdStrategy {
     private final static Logger logger = Logger.getLogger(TestThresholdStrategy.class);
 
-    public void execute(Character character) {
+    public void execute(org.emhonaise.springsquare.game.api.Character character) {
         PassionState passionState = character.getMacroPassion().getPassionState();
         WithstandingState withstandingState = character.getMacroPassion().getWithstandingState();
         double ratio = character.getMacroPassion().getAverageLevelRatio();
