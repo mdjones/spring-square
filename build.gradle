@@ -8,10 +8,12 @@ subprojects {
     version = '0.1.0-SNAPSHOT'
 
     repositories {
-        maven {
-            //url "http://emv-nexus.na.novartis.net:8081/nexus/content/repositories/public/"
-            url "http://emv-nexus.na.novartis.net:8081/nexus/content/groups/public"
-        }
+//        maven {
+//            //url "http://emv-nexus.na.novartis.net:8081/nexus/content/repositories/public/"
+//            url "http://emv-nexus.na.novartis.net:8081/nexus/content/groups/public"
+//        }
+
+        mavenCentral()
 
         mavenLocal()
     }
@@ -30,6 +32,12 @@ subprojects {
         compile group: 'org.springframework', name: 'spring-core', version: springframeworkVersion
         compile group: 'org.springframework', name: 'spring-test', version: springframeworkVersion
         compile group: 'org.springframework', name: 'spring-context', version: springframeworkVersion
+        compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '1.0.5.RELEASE'
+        compile 'javax.servlet:servlet-api:2.5'
+        compile 'org.springframework.social:spring-social-twitter:1.0.5.RELEASE'
+
+
+        //http://projects.spring.io/spring-social-twitter/
 
         compile 'log4j:log4j:1.2.17'
         compile 'commons-cli:commons-cli:1.2'
